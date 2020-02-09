@@ -1,6 +1,6 @@
-package com.nexeo.kata.models;
+package com.kata.tennis.models;
 
-import com.nexeo.kata.services.ScoreServices;
+import com.kata.tennis.services.ScoreServices;
 /**
  * 
  * @author Mohamed TRABELSI

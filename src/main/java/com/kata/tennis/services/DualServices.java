@@ -1,7 +1,8 @@
-package com.nexeo.kata.services;
+package com.kata.tennis.services;
 
 import java.util.Optional;
-import com.nexeo.kata.models.Player;
+
+import com.kata.tennis.models.Player;
 
 public interface DualServices {
 	Player getPlayerOne();

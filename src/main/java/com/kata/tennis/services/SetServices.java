@@ -1,4 +1,4 @@
-package com.nexeo.kata.services;
+package com.kata.tennis.services;
 
 public interface SetServices extends DualServices {
 

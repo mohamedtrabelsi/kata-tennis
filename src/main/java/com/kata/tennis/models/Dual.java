@@ -1,4 +1,4 @@
-package com.nexeo.kata.models;
+package com.kata.tennis.models;
 
 import java.util.Optional;
 /**

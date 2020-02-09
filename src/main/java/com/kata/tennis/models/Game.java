@@ -1,6 +1,6 @@
-package com.nexeo.kata.models;
+package com.kata.tennis.models;
 
-import com.nexeo.kata.services.GameServices;
+import com.kata.tennis.services.GameServices;
 
 public class Game extends Dual implements GameServices {
 	private static final int MAX_SCORE = 40;

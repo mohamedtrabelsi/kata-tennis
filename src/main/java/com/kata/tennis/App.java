@@ -1,9 +1,9 @@
-package com.nexeo.kata;
+package com.kata.tennis;
 
 import java.util.Scanner;
 
-import com.nexeo.kata.games.AllSet;
-import com.nexeo.kata.games.OnlyMatch;
+import com.kata.tennis.games.AllSet;
+import com.kata.tennis.games.OnlyMatch;
 
 public class App {
 	public static void main(String[] args) throws Throwable {

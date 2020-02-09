@@ -8,11 +8,11 @@ import org.junit.Before;
 import org.junit.Test;
 import org.junit.jupiter.api.DisplayName;
 
-import com.nexeo.kata.models.Game;
-import com.nexeo.kata.models.Player;
-import com.nexeo.kata.models.Set;
-import com.nexeo.kata.services.GameServices;
-import com.nexeo.kata.services.SetServices;
+import com.kata.tennis.models.Game;
+import com.kata.tennis.models.Player;
+import com.kata.tennis.models.Set;
+import com.kata.tennis.services.GameServices;
+import com.kata.tennis.services.SetServices;
 
 public class AppTest {
 
