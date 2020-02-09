@@ -1,4 +1,4 @@
-package com.nexeo.services;
+package com.nexeo.kata.services;
 
 public interface GameServices extends DualServices {
 

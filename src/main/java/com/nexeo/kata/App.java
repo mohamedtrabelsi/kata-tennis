@@ -2,8 +2,8 @@ package com.nexeo.kata;
 
 import java.util.Scanner;
 
-import GameManagement.AllSet;
-import GameManagement.OnlyMatch;
+import com.nexeo.kata.games.AllSet;
+import com.nexeo.kata.games.OnlyMatch;
 
 public class App {
 	public static void main(String[] args) throws Throwable {

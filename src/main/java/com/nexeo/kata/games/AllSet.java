@@ -1,14 +1,14 @@
-package GameManagement;
+package com.nexeo.kata.games;
 
 import java.util.Scanner;
 
 import com.nexeo.kata.models.Game;
 import com.nexeo.kata.models.Player;
 import com.nexeo.kata.models.Set;
-import com.nexeo.services.GameServices;
-import com.nexeo.services.SetServices;
+import com.nexeo.kata.services.GameServices;
+import com.nexeo.kata.services.SetServices;
 
-public class OnlyMatch {
+public class AllSet {
 	private static SetServices setService;
 	private static GameServices gameService;
 	private static Player playerOne;
@@ -16,14 +16,15 @@ public class OnlyMatch {
 
 	public static void addPlayers(Scanner scanner) throws Throwable {
 		scanner.nextLine();
+		System.out.println("\n\nPlease 1st player's info:");
 		System.out.print("  Player 1 Name: ");
 		String firstPlayerName = scanner.nextLine();
-		System.out.println("Player  " + firstPlayerName + " added successfully. Please Tap enter ");
+		System.out.println("Player " + firstPlayerName + " added successfully. Please Tap enter \n\n");
 		scanner.nextLine();
 		System.out.println("\n\nPlease second player's info:");
 		System.out.print("  Player 2 Name: ");
 		String secondPlayerName = scanner.nextLine();
-		System.out.println("Player " + secondPlayerName + " added successfully. Please Tap enter ");
+		System.out.println("Player " + secondPlayerName + " added successfully. Please Tap enter \n\n");
 		// INITIALIZE PLAYERS
 		setService = Set.initSet(firstPlayerName, secondPlayerName);
 		System.out.println("Player one: " + setService.getPlayerOne().getPlayerName());
@@ -51,20 +52,28 @@ public class OnlyMatch {
 			gameService.playerScore(0);
 			System.out.println("Player 1 wins 1 point");
 			System.out.println("Score :" + gameService.getCurrentScore());
-			if (gameService.getWinner().isPresent()) {
-				System.out.println("Player 1 is winner");
-				setService.playerWinSet(0);
-
-				return "x";
+			if (!setService.getWinner().isPresent()) {
+				if (gameService.getWinner().isPresent()) {
+					setService.playerWinSet(0);
+					System.out.println("Player 1 wins the set");
+				}
+			} else if (setService.getWinner().isPresent()) {
+				 System.out.println("winner of set "+ setService.getWinner().get().getPlayerName());
+				 return "x";
 			}
 			return option;
 		case "2":
 			gameService.playerScore(1);
 			System.out.println("Player 2 wins 1 point");
 			System.out.println("Score :" + gameService.getCurrentScore());
-			if (gameService.getWinner().isPresent()) {
-				System.out.println("Player 2 is winner");
-				return "x";
+			if (!setService.getWinner().isPresent()) {
+				if (gameService.getWinner().isPresent()) {
+					setService.playerWinSet(1);
+					System.out.println("Player 2 wins the set");
+				}
+			} else if (setService.getWinner().isPresent()) {
+				 System.out.println("winner of set "+ setService.getWinner().get().getPlayerName());
+				 return "x";
 			}
 			return option;
 		default:

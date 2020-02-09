@@ -11,8 +11,8 @@ import org.junit.jupiter.api.DisplayName;
 import com.nexeo.kata.models.Game;
 import com.nexeo.kata.models.Player;
 import com.nexeo.kata.models.Set;
-import com.nexeo.services.GameServices;
-import com.nexeo.services.SetServices;
+import com.nexeo.kata.services.GameServices;
+import com.nexeo.kata.services.SetServices;
 
 public class AppTest {
 

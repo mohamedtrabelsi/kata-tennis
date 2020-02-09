@@ -1,6 +1,6 @@
 package com.nexeo.kata.models;
 
-import com.nexeo.services.SetServices;
+import com.nexeo.kata.services.SetServices;
 
 /**
  * 

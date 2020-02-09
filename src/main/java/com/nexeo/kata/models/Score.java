@@ -1,6 +1,6 @@
 package com.nexeo.kata.models;
 
-import com.nexeo.services.ScoreServices;
+import com.nexeo.kata.services.ScoreServices;
 /**
  * 
  * @author Mohamed TRABELSI

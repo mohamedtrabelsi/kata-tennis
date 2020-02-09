@@ -1,4 +1,4 @@
-package com.nexeo.services;
+package com.nexeo.kata.services;
 
 import java.util.Optional;
 import com.nexeo.kata.models.Player;

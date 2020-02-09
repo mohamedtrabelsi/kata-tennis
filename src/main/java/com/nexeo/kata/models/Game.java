@@ -1,6 +1,6 @@
 package com.nexeo.kata.models;
 
-import com.nexeo.services.GameServices;
+import com.nexeo.kata.services.GameServices;
 
 public class Game extends Dual implements GameServices {
 	private static final int MAX_SCORE = 40;
